@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-green: #a8e6c1;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: black;
+}
+
+.forced-landscape {
+  width: 100vh !important;
+  height: 100vw !important;
+  position: fixed !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) rotate(90deg) scale(0.9) !important;
+  transform-origin: center center !important;
+  overflow: hidden !important;
+  overscroll-behavior: none !important;
+  transition: transform 1.2s cubic-bezier(0.65, 0, 0.35, 1);
+  padding: 0px !important;
+}
